@@ -9,9 +9,9 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 function onUserNameSubmit(event) {
   event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
-  const userName = loginInput.value;
-  localStorage.setItem(USERNAME_KEY, userName);
-  paintGreetings(userName);
+  const usernameInput = loginInput.value;
+  localStorage.setItem(USERNAME_KEY, usernameInput);
+  paintGreetings(usernameInput);
 }
 
 function paintGreetings(username) {
