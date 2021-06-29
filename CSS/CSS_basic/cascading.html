@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <style>
+      li {
+        color: red;
+      }
+      #idSel {
+        color: blue;
+      }
+      .classSel {
+        color: green;
+      }
+      #importance li {
+        color: cornflowerblue;
+      }
+      h3 {
+        color: lightslategray;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>HTML</li>
+      <li id="idSel" class="classSel" style="color: powderblue">CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <h3>
+      캐스캐이딩의 우선순위는 더 구체적인 내용에서 보다 더 포괄적인 내용 순으로
+      적용된다.
+    </h3>
+    <ol id="importance">
+      <li>style attribute</li>
+      <li>id selector</li>
+      <li>class selector</li>
+      <li>tag selector</li>
+    </ol>
+  </body>
+</html>
