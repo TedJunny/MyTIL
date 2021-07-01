@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 어떤 요소의 시각적 요소가 없다면 해당 요소의 margin은
+    위쪽의 값과 아래쪽의 값중 더 큰 값의 margin을 가지게 된다. -->
+    <style>
+      #empty {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        /* border: 1px solid tomato; */
+      }
+      #normal {
+        background-color: powderblue;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="empty"></div>
+    <div id="normal">normal</div>
+  </body>
+</html>
