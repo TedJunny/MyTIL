@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--position 값이 relative인 경우 부모를 기준으로 위치가 정해지고
+        absolue인 경우 부모 중에 position type이 지정된(static이 아닌 type으로) 부모를 기준으로
+        위치가 정해지고, 부모와의 관계가 끊기기 때문에 자신의 크기는 자신의 
+        컨텐츠 크기가 된다. -->
+    <style>
+      #parent,
+      #other,
+      #grand {
+        border: 5px solid tomato;
+      }
+      #grand {
+        position: relative;
+      }
+      #me {
+        background-color: black;
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other">other</div>
+    <div id="grand">
+      grand
+      <div id="parent">
+        parent
+        <div id="me">me</div>
+      </div>
+    </div>
+  </body>
+</html>
