@@ -5,6 +5,7 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #f7fcff;
+  --color-light-grey: #a0a09f;
   --color-dark-grey: #242323;
   --color-black: #000000;
 
@@ -26,6 +27,21 @@
 /* Universal tags */
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Typography */
@@ -58,5 +74,36 @@ p {
   font-weight: var(--weight-regular);
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color-black);
+  margin: 0 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.nav__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.navbar__menu__item:hover {
+  color: var(--color-light-grey);
+  font-size: var(--font-medium);
+  padding: 0 12px;
   margin: 0 0;
 }
