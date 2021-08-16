@@ -9,7 +9,7 @@ class BooksInline(admin.TabularInline):
     readonly_fields = (
         "title",
         "author",
-        "summmary",
+        "summary",
         "isbn",
         "genre",
         "language",
