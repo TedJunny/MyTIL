@@ -48,6 +48,14 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
+    def display_genre(self):
+
+        """Create A string for the Genre. This is required to display genre in Admin"""
+
+        return ", ".join(genre.name for genre in self.genre.all()[:3])
+
+    display_genre.short_description = "Genre"
+
     def get_absolute_url(self):
 
         """Returns the url to access a detail record for this book."""
