@@ -57,6 +57,7 @@ class BookInstanceAdmin(admin.ModelAdmin):
     list_display = (
         "book",
         "status",
+        "borrower",
         "due_back",
         "id",
     )
@@ -65,7 +66,7 @@ class BookInstanceAdmin(admin.ModelAdmin):
 
     fieldsets = (
         (None, {"fields": ("book", "imprint", "id")}),
-        ("Availablity", {"fields": ("status", "due_back")}),
+        ("Availablity", {"fields": ("status", "due_back", "borrower")}),
     )
 
 
